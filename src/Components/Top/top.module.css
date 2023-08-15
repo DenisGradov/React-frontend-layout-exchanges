@@ -1,0 +1,296 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
+.topPc {
+  margin: 0 auto;
+  max-width: 1600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px;
+}
+.topPcleft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (max-width: 310px) {
+  .topPcleft .logoImg {
+    width: 50vw;
+  }
+}
+.topPcleft .inputBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+.topPcleft .inputBox .input {
+  padding: 10px 24px 10px 26px;
+  width: 250px;
+  border-radius: 6px;
+  background: radial-gradient(100.04% 100% at 50% 0%, #26314e 0%, #252b3d 100%);
+  color: #6d799c;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.topPcleft .inputBox .input:focus {
+  padding: 9px 23px 9px 25px;
+  border: 1px solid #b2bee2;
+}
+.topPcleft .inputBox .inputIcon {
+  position: absolute;
+  top: 15px;
+  left: 7px;
+  color: #b2bee2;
+}
+.topPc .topPcRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.navigation .isactive {
+  text-align: center;
+  margin: 0 32px;
+  color: #818386;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 445;
+  line-height: normal;
+  text-decoration: underline;
+  font-size: 20px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+@media (min-width: 1544px) {
+  .navigation .isactive {
+    margin: 0 32px;
+  }
+  .navigation .isactive:first-child {
+    margin-left: 0;
+  }
+  .navigation .isactive:last-child {
+    margin-right: 0;
+  }
+}
+.navigation .noActive {
+  margin: 20px 32px;
+  margin-bottom: 30px;
+  color: #464e62;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 445;
+  line-height: normal;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+@media (min-width: 1544px) {
+  .navigation .noActive {
+    margin: 0 32px;
+  }
+  .navigation .noActive:first-child {
+    margin-left: 0;
+  }
+  .navigation .noActive:last-child {
+    margin-right: 0;
+  }
+}
+
+.inputBoxBurger {
+  margin-bottom: 20px;
+}
+.inputBoxBurger .input {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 24px 10px 26px;
+  width: 178px;
+  border-radius: 6px;
+  background: radial-gradient(100.04% 100% at 50% 0%, #26314e 0%, #252b3d 100%);
+  color: #6d799c;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.inputBoxBurger .input:focus {
+  padding: 9px 23px 9px 25px;
+  border: 1px solid #b2bee2;
+}
+
+.blackButton {
+  padding: 10px 24px;
+  color: #cee7ff;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 6px;
+  background: radial-gradient(100.04% 100% at 50% 0%, #26314e 0%, #1e253c 100%);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.blackButton:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.blueButton {
+  margin-left: 8px;
+  padding: 10px 24px;
+  color: #08090b;
+  font-family: "Inter";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  border-radius: 6px;
+  background: var(--1, radial-gradient(100.04% 100% at 50% 0%, #66cbf9 0%, #0fb5ff 100%));
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+.blueButton:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.line {
+  margin: 0 32px;
+  width: 24px;
+  height: 1px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  stroke-width: 1px;
+  background-color: #252c41;
+}
+
+.burgerButton {
+  cursor: pointer;
+  height: 27px;
+  width: 27px;
+  margin: 15px;
+  overflow: visible;
+  z-index: 2;
+  position: fixed;
+  right: 20px;
+  overflow: hidden;
+}
+.burgerButton span,
+.burgerButton span:before,
+.burgerButton span:after {
+  background: #cee7ff;
+  display: block;
+  height: 3px;
+  opacity: 1;
+  position: absolute;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+.burgerButton span:before,
+.burgerButton span:after {
+  content: "";
+}
+.burgerButton span:before {
+  left: 0px;
+  top: -6px;
+  width: 27px;
+}
+.burgerButton span {
+  right: 0px;
+  top: 12px;
+  width: 27px;
+}
+.burgerButton span:after {
+  left: 0px;
+  top: 6px;
+  width: 27px;
+}
+.burgerButton.close {
+  z-index: 333;
+  position: fixed;
+}
+.burgerButton.close span:before {
+  background: #cee7ff;
+  top: 0px;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  width: 27px;
+}
+.burgerButton.close span {
+  background: #cee7ff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 13px;
+  width: 27px;
+}
+.burgerButton.close span:after {
+  top: 0px;
+  left: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  opacity: 0;
+  width: 0;
+}
+
+.burgerOverlay {
+  z-index: 222;
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 0px;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+  padding-top: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.burgerOverlay.overlay {
+  visibility: visible;
+  opacity: 1;
+  padding-top: 100px;
+  background: #08090b;
+}
+
+.close {
+  color: #f9f8f8;
+}
+
+.burgerOverlay a {
+  display: block;
+  margin: 25px;
+  margin-top: 40px;
+  color: #f9f8f8;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
